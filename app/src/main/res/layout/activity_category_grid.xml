@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_category_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dontknow.finhacks.com.shoppersproject.CategoryGrid">
+
+    <!-- Clothing  -->
+    <ImageButton
+        app:srcCompat="@drawable/bag_shoe"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:id="@+id/clothingButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:elevation="0dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible" />
+
+    <!-- Electronics -->
+    <ImageButton
+        app:srcCompat="@drawable/ic_latop"
+        android:id="@+id/electronicsButton"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_alignTop="@+id/clothingButton"
+        android:layout_alignLeft="@+id/gamesButton"
+        android:layout_alignStart="@+id/gamesButton" />
+
+    <!--Games -->
+    <ImageButton
+        app:srcCompat="@drawable/ic_steam"
+        android:id="@+id/gamesButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/restaurantButton"
+        android:layout_toRightOf="@+id/homeButton"
+        android:layout_toEndOf="@+id/homeButton"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <!-- Restaurants -->
+    <ImageButton
+        app:srcCompat="@drawable/ic_food_in_blue"
+        android:layout_marginTop="13dp"
+        android:id="@+id/restaurantButton"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_below="@+id/clothingButton"
+        android:layout_alignLeft="@+id/clothingButton"
+        android:layout_alignStart="@+id/clothingButton" />
+
+    <!-- Cosmetics -->
+    <ImageButton
+        app:srcCompat="@drawable/ic_makeup1"
+        android:id="@+id/cosmesticsButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/homeButton"
+        android:layout_alignLeft="@+id/gamesButton"
+        android:layout_alignStart="@+id/gamesButton" />
+
+    <!-- Home -->
+    <ImageButton
+        app:srcCompat="@drawable/ic_homeappliance"
+        android:id="@+id/homeButton"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/restaurantButton"
+        android:layout_alignLeft="@+id/restaurantButton"
+        android:layout_alignStart="@+id/restaurantButton" />
+
+    <Button
+        android:text="Done"
+        android:id="@+id/submitCategory"
+        android:layout_width="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:text="Fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/restaurantButton"
+        android:layout_alignLeft="@+id/submitCategory"
+        android:layout_alignStart="@+id/submitCategory" />
+</RelativeLayout>
